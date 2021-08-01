@@ -1,0 +1,23 @@
+{
+  "name": "reconizor-db-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/shamshoum/reconizor-db-module.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/shamshoum/reconizor-db-module/issues"
+  },
+  "homepage": "https://gitlab.com/shamshoum/reconizor-db-module#readme",
+  "dependencies": {
+    "mongoose": "^5.11.18",
+    "mongoose-paginate-v2": "^1.3.16"
+  }
+}

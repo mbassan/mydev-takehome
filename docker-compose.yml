@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  mongo:
+    image: us.gcr.io/crypto-processor/mongo:latest
+
+  crawler:
+    build:
+      context: ./crawler
+    networks:
+      - mongo
+      - crawler
+
+  api:
+    build:
+      context: ./api
+    networks:
+      - mongo
+      - nginx
+      - crawler
+
+  frontend:
+    build:
+      context: ./frontend
+
+networks:
+  mongo:
+  crawler:
+  nginx:

@@ -17,7 +17,6 @@ function init() {
     });
     connection.once("open", () => {
       resolve();
-      console.log("DB Connected");
     });
   });
 }

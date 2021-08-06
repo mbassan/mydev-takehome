@@ -1,0 +1,125 @@
+.table-container {
+  
+}
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead{
+  
+}
+.table thead th{
+  color: rgba(var(--txt-color), 0.55);
+  height: 41px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: left;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(var(--txt-color), 0.15);
+}
+.table thead th:first-child{
+  padding-left: 15px;
+}
+.table tbody{
+  
+}
+.table tbody tr{
+  
+}
+.table tbody tr.clickable:hover{
+  background-color: rgba(var(--txt-color),0.01);
+}
+.table tbody tr td{
+  height: 55px;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(var(--txt-color), 0.15);
+}
+.table tbody tr td:first-child{
+  padding-left: 15px;
+}
+.table tbody tr.clickable td {
+  cursor: pointer;
+}
+.table tbody tr:last-child td{
+  border-bottom: none;
+}
+.tableSelect{
+  width: 10px;
+  padding-right: 15px;
+}
+.table tr td button {
+  margin: -5px 0;
+}
+.table tr td .avatar {
+  margin: -6px 5px -6px 0;
+}
+.table tr td.left,
+.table tr th.left{
+  text-align: left;
+}
+.table tr td.center,
+.table tr th.center{
+  text-align: center;
+}
+.table tr td.right,
+.table tr th.right{
+  text-align: right;
+}
+.table tr td:last-child{
+  padding-right: 15px;
+}
+.table tr th:last-child{
+  padding-right: 15px;
+}
+/*
+.table-container.scrollable table.table tbody{
+  width:100%;
+  overflow-y:scroll;
+  display:block;
+}
+.table-container.scrollable table.table thead {
+  display:table;
+  width:calc(100% - 15px);
+  table-layout:fixed;
+}
+.table-container.scrollable table.table tbody tr {
+  display:table;
+  width:100%;
+  table-layout:fixed;
+}
+*/
+.table.spaced {
+
+}
+.table.spaced tbody tr td{
+  height: 50px;
+  border-bottom: 7px solid rgba(var(--txt-color), 0.05);
+  border-top: 1px solid rgba(var(--txt-color), 0.15);
+}
+.table.spaced tbody tr td:first-child{
+  border-left: 1px solid rgba(var(--txt-color), 0.05);
+}
+.table.spaced tbody tr td:last-child{
+  border-right: 1px solid rgba(var(--txt-color), 0.05);
+}
+.table.spaced th{
+  height: 50px;
+  border-top: 1px solid rgba(var(--txt-color), 0.15);
+  background-color: rgba(var(--txt-color),0.04);
+}
+.table.spaced th:first-child{
+  border-left: 1px solid rgba(var(--txt-color), 0.05);
+}
+.table.spaced th:last-child{
+  border-right: 1px solid rgba(var(--txt-color), 0.05);
+}
+.table.spaced tbody{
+
+}
+
+.table.normal-header th{
+  height: 50px;
+  border-top: 1px solid rgba(var(--txt-color), 0.15);
+  background-color: rgba(var(--txt-color),0.04);
+}

@@ -1,0 +1,19 @@
+.selectWrapper{
+  position: relative;
+}
+
+.caption {
+  color: rgb(var(--bg-color));
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.inline{
+  display: inline-block;
+}
+.block{
+
+}

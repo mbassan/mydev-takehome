@@ -1,0 +1,62 @@
+.statusIndicatorContainer {
+  text-transform: capitalize;
+  color: rgb(var(--txt-color));
+}
+.statusIndicator {
+  background-color: rgb(var(--txt-color));
+  height: 8px;
+  width: 8px;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  margin-right: 6px;
+  top: -2px;
+}
+.status-pending {
+  color: var(--warning-color);
+}
+.status-pending .statusIndicator {
+  background-color: var(--warning-color);
+}
+.status-error {
+  color: rgb(var(--danger-color));
+}
+.status-error .statusIndicator {
+  background-color: rgb(var(--danger-color));
+}
+.status-running {
+  color: rgb(var(--primary-color));
+}
+.status-running .statusIndicator {
+  background-color: rgb(var(--primary-color));
+}
+.status-done {
+  color: var(--success-color);
+}
+.status-done .statusIndicator {
+  background-color: var(--success-color);
+}
+.status-stopped {
+  color: rgb(var(--danger-color));
+}
+.status-stopped .statusIndicator {
+  background-color: rgb(var(--danger-color));
+}
+.status-medium .statusIndicator {
+  background-color: var(--warning-color);
+}
+.status-low .statusIndicator {
+  background-color: var(--success-color);
+}
+.status-high .statusIndicator {
+  background-color: rgb(var(--danger-color));
+}
+.status-pending .statusIndicator {
+  background-color: var(--warning-color);
+}
+.status-closed .statusIndicator {
+  background-color: var(--success-color);
+}
+.status-open .statusIndicator {
+  background-color: rgb(var(--danger-color));
+}

@@ -1,0 +1,38 @@
+.content-modal-testing {
+  padding: 20px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.query {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filterRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.filterRow > * {
+  flex-basis: 50%;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+.filterRow :last-child{
+  margin-right: 0;
+  flex-basis: 10px;
+}
+.addButtonContainer{
+  text-align: right;
+}

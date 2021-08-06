@@ -1,0 +1,21 @@
+.root .rd3t-label__title {
+  font-weight: 400;
+  background: #000;
+}
+.root > circle {
+  r: 7px;
+  stroke: var(--highlight-color);
+  fill: var(--highlight-color);
+}
+
+.branch > circle {
+  r: 7px;
+  stroke: var(--highlight-color);
+  fill: var(--highlight-color);
+}
+
+.leaf > circle {
+  r: 7px;
+  stroke: var(--highlight-color);
+  fill: rgb(var(--bg-color));
+}

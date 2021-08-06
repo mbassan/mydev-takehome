@@ -1,0 +1,10 @@
+.userImageContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+.userIcon{
+  color: rgba(var(--primary-color), 0.1);
+}

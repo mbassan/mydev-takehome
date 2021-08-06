@@ -1,0 +1,28 @@
+.streamForm {
+  padding: 20px;
+}
+.streamFormRow{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.streamFormCol{
+  flex-grow: 1;
+  margin-right: 10px;
+  flex-basis: 50%;
+}
+.streamFormCol:last-child{
+  flex-basis: 30px;
+  flex-grow: 0;
+  padding-bottom: 20px;
+  margin-right: 0;
+}
+
+.addButtonContainer{
+  text-align: right;
+}
+.noResults{
+  
+}

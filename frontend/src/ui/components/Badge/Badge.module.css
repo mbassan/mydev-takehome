@@ -1,0 +1,71 @@
+.badgeContainer {
+  color: rgb(var(--txt-color));
+  position: relative;
+  font-size: 12px;
+  display: inline-block;
+  padding: 2px 8px;
+  line-height: 14px;
+  font-weight: 500;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.1;
+  z-index: 1;
+}
+.content{
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}
+.status-default .content {
+  color: rgb(var(--primary-color));
+}
+.status-default .bg {
+  background-color: rgb(var(--txt-color));
+}
+.status-pending .content {
+  color: var(--warning-color);
+}
+.status-pending .bg {
+  background-color: var(--warning-color);
+}
+.status-running .content {
+  color: rgb(var(--primary-color));
+}
+.status-running .bg {
+  background-color: rgb(var(--primary-color));
+}
+.status-done .content {
+  color: var(--success-color);
+}
+.status-done .bg {
+  background-color: var(--success-color);
+}
+.status-stopped .content {
+  color: rgb(var(--danger-color));
+}
+.status-stopped .bg {
+  background-color: rgb(var(--danger-color));
+}
+.status-medium .bg {
+  background-color: var(--warning-color);
+}
+.status-medium .content {
+  color: var(--warning-color);
+}
+.status-low .bg {
+  background-color: var(--success-color);
+}
+.status-low .content {
+  color: var(--success-color);
+}
+.status-high .bg {
+  background-color: rgb(var(--danger-color));
+}
+.status-high .content {
+  color: rgb(var(--danger-color));
+}

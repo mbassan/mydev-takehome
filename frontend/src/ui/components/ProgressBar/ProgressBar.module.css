@@ -1,0 +1,38 @@
+.outer{
+  display: block;
+  position: relative;
+  background-color: rgba(var(--txt-color), 0.15);
+  height: 8px;
+  overflow: visible;
+}
+.inner{
+  position: relative;
+  height: 100%;
+  display: block;
+}
+.primary{
+  background: linear-gradient(90deg, rgba(var(--bg-color), 0.5) 0%, var(--highlight-color) 100%);
+}
+.success{
+  background: linear-gradient(90deg, rgba(var(--bg-color), 0.5) 0%, var(--success-color) 100%);
+}
+.warning{
+  background: linear-gradient(90deg, rgba(var(--warning-color), 0.5) 0%, rgb(var(--warning-color)) 100%);
+}
+.danger{
+  background: linear-gradient(90deg, rgba(var(--danger-color), 0.5) 0%, rgb(var(--danger-color)) 100%);
+}
+.default{
+  background: linear-gradient(90deg, rgba(var(--txt-color), 0.5) 0%, rgb(var(--txt-color)) 100%);
+}
+.tick{
+  width: 1px;
+  height: 4px;
+  position: absolute;
+}
+.tickTop{
+  top: -4px;
+}
+.tickBottom{
+  bottom: -4px;
+}

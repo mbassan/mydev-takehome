@@ -12,7 +12,7 @@ const Species = new mongoose.Schema(
     language: String,
     name: String,
     skin_colors: String,
-    url: String,
+    url: { type: String, index: { unique: true } },
   },
   { timestamps: true }
 );

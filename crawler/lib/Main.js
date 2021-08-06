@@ -1,8 +1,8 @@
 require("dotenv").config();
-const db = require("../db/db.module.js");
-const swapi = require("../modules/swapi.module.js");
+const db = require("../db/db.module");
+const swapi = require("../modules/swapi.module");
 const Crawler = require("./Crawler");
-const Log = require("./Log");
+const { Log } = require("../db/util");
 
 module.exports = class Main {
   static async init() {

@@ -9,7 +9,7 @@ const Films = new mongoose.Schema(
     release_date: String,
     species: [{ type: mongoose.Schema.Types.ObjectId, ref: "Species" }],
     title: String,
-    url: String,
+    url: { type: String, index: { unique: true } },
   },
   { timestamps: true }
 );

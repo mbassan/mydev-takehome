@@ -1,0 +1,39 @@
+.panelWrapper {
+  display: block;
+  background-color: rgba(var(--txt-color),0.04);
+}
+.panelHead {
+  height: 58px;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(var(--txt-color));
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: stretch;
+  border-bottom: 1px solid rgba(var(--txt-color), 0.15);
+}
+.panelTitle {
+  display: inline;
+}
+.panelButtons {
+  flex-grow: 1;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.panelButtons > * {
+  margin-left: 10px;
+}
+.panelTable {
+  background-color: rgba(var(--txt-color),0.04);
+}
+.panelModal .modal-content{
+  padding: 15px 0;
+}
+.panelContainer{
+  background-color: rgb(var(--bg-color));
+  height: 100%;
+}

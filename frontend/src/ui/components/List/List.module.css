@@ -1,0 +1,50 @@
+.listWrapper {
+  display: block;
+  background-color: rgba(var(--txt-color),0.04);
+}
+.listHead {
+  height: 58px;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(var(--txt-color));
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(var(--txt-color), 0.15);
+}
+.listTitle {
+  display: inline;
+}
+.listButtons {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.listButtons > * {
+  margin-left: 10px;
+}
+.listButtons button.panel {
+  cursor: pointer;
+  color: rgba(var(--txt-color), 0.55);
+  display: inline-block;
+  background-color: rgba(var(--txt-color),0.04);
+  border-radius: 0;
+  border-left: 1px solid rgba(var(--txt-color), 0.15);
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  padding: 0 20px;
+  height: 58px;
+  margin-right: 0;
+  font-size: 17px;
+  font-weight: 400;
+}
+.listTable {
+  background-color: rgb(var(--bg-color));
+}
+.listPagination{
+  
+}

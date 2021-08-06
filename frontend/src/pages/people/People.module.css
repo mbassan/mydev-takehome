@@ -1,0 +1,8 @@
+.table {
+}
+.rowButtons > * {
+  margin-right: 7px !important;
+}
+.rowButtons > :last-child {
+  margin-right: 0 !important;
+}

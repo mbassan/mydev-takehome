@@ -13,7 +13,7 @@ const People = new mongoose.Schema(
     name: String,
     skin_color: String,
     species: [{ type: mongoose.Schema.Types.ObjectId, ref: "Species" }],
-    url: String,
+    url: { type: String, index: { unique: true } },
   },
   { timestamps: true }
 );

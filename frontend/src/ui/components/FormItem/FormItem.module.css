@@ -1,0 +1,21 @@
+.formItem{
+  position: relative;
+}
+.formItem .caption {
+  color: rgba(var(--txt-color), 0.7);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.formItem .inputWrapper {
+  position: relative;
+}
+.formItem .errorMessage{
+  height: 11px;
+  font-size: 11px;
+  padding-left: 10px;
+  padding: 3px 10px 6px;
+  text-transform: uppercase;
+  color: rgb(var(--danger-color));
+}

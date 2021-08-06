@@ -1,0 +1,33 @@
+.imageWrapper {
+  background-color: rgba(var(--txt-color),0.03);
+  border: 1px solid transparent;
+}
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.hasPlaceholder {
+  border: 1px dashed rgba(var(--txt-color), 0.3);
+}
+
+.hasPlaceholder .img {
+  top: calc(50% - 21.5px);
+  position: relative;
+}
+.hasPlaceholderText .img {
+  top: calc(50% - 34px);
+}
+.imagePlaceholderText{
+  top: calc(50% - 25px);
+  position: relative;
+  text-align: center;
+  opacity: 0.2;
+  display: none;
+  cursor: pointer;
+}
+.hasPlaceholder .imagePlaceholderText {
+  display: block;
+}

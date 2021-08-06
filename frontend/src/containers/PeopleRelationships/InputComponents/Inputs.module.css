@@ -1,0 +1,9 @@
+.inputsRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputsRow > * {
+  width: 48%;
+
+}

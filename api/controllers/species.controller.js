@@ -4,13 +4,14 @@ const Species = require("../db/models/Species");
 async function getMany(req, res) {
   try {
     const { personId } = req.params;
-    const result = await People.findById(personId, "species").populate(
-      "species.species"
-    );
-    if (!result) {
+    const { species } = await People.findById(personId, "species");
+    if (!species) {
       return res.status(400).send("Could not find person");
     }
-    return res.json(result.species);
+    const result = await Species.find({
+      _id: { $in: species },
+    });
+    return res.json(result);
   } catch (err) {
     console.log(err);
     return res

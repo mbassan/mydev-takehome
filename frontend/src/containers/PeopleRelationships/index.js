@@ -6,12 +6,12 @@ import styles from "./PeopleRelationships.module.css";
 export default function PeopleRelationships({ person, films, species }) {
   return (
     <div className={styles.container}>
-      <h3>Relationships for {person.name}</h3>
+      <h2>Relationships for {person.name}</h2>
       <div className={styles.split}>
         <div>
           <h3>Films</h3>
           {films.map((film) => (
-            <Card>
+            <Card className={styles.card}>
               <h4>{film.title}</h4>
               <div className={styles.line}>
                 <b>Released:</b> {film.release_date}
@@ -25,11 +25,12 @@ export default function PeopleRelationships({ person, films, species }) {
               <div className={styles.desc}>{film.opening_crawl}</div>
             </Card>
           ))}
+          {(!films || films.length === 0) && "No films found."}
         </div>
         <div>
           <h3>Species</h3>
           {species.map((species) => (
-            <Card>
+            <Card className={styles.card}>
               <h4>{species.name}</h4>
               <div className={styles.line}>
                 <b>Average Height:</b> {species.average_height}
@@ -46,6 +47,7 @@ export default function PeopleRelationships({ person, films, species }) {
               <div className={styles.desc}>{species.opening_crawl}</div>
             </Card>
           ))}
+          {(!species || species.length === 0) && "No species found."}
         </div>
       </div>
     </div>

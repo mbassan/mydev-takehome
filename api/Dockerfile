@@ -1,7 +1,8 @@
-FROM node:12.16.1-buster-slim
-RUN apt-get update && apt-get install -y git && apt-get install -y telnet
+FROM node:16-alpine3.11
 WORKDIR /app
-COPY package.json .
+COPY api/package.json .
 RUN npm install
-COPY . /app
+COPY api .
+RUN rm /app/.env
+COPY db db
 ENTRYPOINT npm start

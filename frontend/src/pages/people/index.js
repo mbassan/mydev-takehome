@@ -137,6 +137,7 @@ export default function People() {
             render: (stream) => (
               <div className={styles.rowButtons}>
                 <Button
+                  className={styles.button}
                   iconButton
                   variant="secondary"
                   onClick={() => view(stream)}

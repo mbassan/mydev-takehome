@@ -4,6 +4,10 @@ const db = require("./db/db.module");
 const { Log } = require("./db/util");
 const app = require("./app");
 
+console.log("**********************************************");
+console.log("************ API Service Starting ************");
+console.log("**********************************************");
+
 db.init();
 
 const httpServer = http.createServer(app);

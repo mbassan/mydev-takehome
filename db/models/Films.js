@@ -13,4 +13,4 @@ const Films = new mongoose.Schema(
   },
   { timestamps: true }
 );
-module.exports = mongoose.model("Films", Films);
+module.exports = mongoose.model("Films", Films, "films");

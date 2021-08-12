@@ -6,3 +6,6 @@
 .rowButtons > :last-child {
   margin-right: 0 !important;
 }
+.button {
+  padding: 0 9px;
+}

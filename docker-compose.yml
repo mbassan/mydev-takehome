@@ -1,40 +1,72 @@
 version: "3.7"
 
 services:
+  nginx_frontend:
+    build:
+      context: ./nginx_frontend
+    networks:
+      - nginx_frontend
+    depends_on:
+      - frontend
+    ports:
+      - "80:80"
+
+  nginx_api:
+    build:
+      context: ./nginx_api
+    networks:
+      - nginx_api
+    depends_on:
+      - api
+    ports:
+      - "3000:80"
+
   mongo:
-    image: us.gcr.io/crypto-processor/mongo:latest
+    image: mongo:latest
     volumes:
       - mongo:/data
+    networks:
+      - mongo
+    ports:
+      - "27017:27017"
 
   crawler:
     build:
-      context: ./crawler
+      context: .
+      dockerfile: ./crawler/Dockerfile
     networks:
       - mongo
       - api
-    environment:
-      - APP_DEBUG=1
+    depends_on:
+      - mongo
 
   api:
     build:
-      context: ./api
+      context: .
+      dockerfile: ./api/Dockerfile
     networks:
       - mongo
       - api
+      - nginx_api
+    depends_on:
+      - mongo
 
   frontend:
     build:
       context: ./frontend
     networks:
-      - nginx
-      - api
+      - nginx_frontend
+      - nginx_api
+    environment:
+      - SKIP_PREFLIGHT_CHECK=true
+    stdin_open: true
 
 networks:
   mongo:
   api:
-  nginx:
+  nginx_frontend:
+  nginx_api:
 
 volumes:
-  nginx:
   mongo:
   api:
